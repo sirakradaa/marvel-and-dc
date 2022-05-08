@@ -1,6 +1,6 @@
 import React from 'react'
 
-function error() {
+const error = () =>  {
   return (
     <div>error</div>
   )

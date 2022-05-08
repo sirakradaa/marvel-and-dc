@@ -1,8 +1,12 @@
 import React from 'react'
+import AnimationsPage from './../AnimationsPage';
 
-function vote() {
+
+const vote = () =>  {
   return (
-    <div>vote</div>
+    <AnimationsPage>
+      <div>vote</div>
+    </AnimationsPage>
   )
 }
 

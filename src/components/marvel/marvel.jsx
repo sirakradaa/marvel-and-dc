@@ -1,8 +1,13 @@
 import React from 'react'
+import AnimationsPage from './../AnimationsPage';
 
-function marvel() {
+
+const marvel = () => {
   return (
+  <AnimationsPage>
     <div>marvel</div>
+  </AnimationsPage>
+    
   )
 }
 

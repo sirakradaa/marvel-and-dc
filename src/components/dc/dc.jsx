@@ -1,8 +1,12 @@
 import React from 'react'
+import AnimationsPage from './../AnimationsPage';
 
-function dc() {
+
+const dc = () =>  {
   return (
-    <div>dc</div>
+    <AnimationsPage>
+      <div>dc</div>
+    </AnimationsPage>
   )
 }
 
