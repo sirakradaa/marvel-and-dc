@@ -9,13 +9,16 @@ import { AnimatePresence } from 'framer-motion';
 
 
 const App = () => {
+  // Used to identify what page directory we are on
   const location = useLocation();
 
+  // Set page title
   useEffect(() => {
     document.title = "Marvel & DC"
  }, []);
 
   return (
+    {/* Wrap all routes in animate presence to apply framer-motion */},
     <AnimatePresence exitBeforeEnter>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Choose/>}/>

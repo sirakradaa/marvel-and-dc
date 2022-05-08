@@ -1,12 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-
+/* Page for transition animations */
 const animations = {
     initial: {opacity: 0, x: 100},
     animate: {opacity: 1, x: 0},
     exit: {opacity: 0, x: -100},
 }
 
+// Pages are passed in as children and then undergo animations
 const AnimationsPage = ({ children }) => {
   return (
     <motion.div 
