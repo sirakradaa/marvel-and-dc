@@ -16,9 +16,8 @@
 }
 
 .marvel-logo{
-    width: 100%;
+    width: 90%;
     padding-top: 49%;
-    margin-left: 40px;
     background-image: url('../../images/Marvel/Marvel-Logo.jpg');
     background-size: cover;
     cursor: pointer;
@@ -41,7 +40,7 @@
 }
 
 .dc-logo{
-    width: 40vw;
+    width: 90%;
     padding-top: 49%;
     background-image: url('../../images/DC/DC-Logo.jpg');
     background-size: cover;

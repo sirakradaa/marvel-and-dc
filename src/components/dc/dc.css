@@ -1,0 +1,43 @@
+.dc-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: rgb(3, 3, 41);
+}
+
+.dc-box{    
+    flex: 1;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #5e5e5e;
+}
+
+.dc-left-slide{
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: 0%;
+}
+
+.dc-right-slide{
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.carousel .slider-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.dc-desc{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}

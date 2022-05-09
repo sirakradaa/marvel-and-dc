@@ -1,6 +1,6 @@
 import React from 'react'
 import AnimationsPage from './../AnimationsPage';
-
+import './vote.css'
 
 const vote = () =>  {
   return (

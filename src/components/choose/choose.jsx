@@ -1,5 +1,3 @@
-// Home page which allows user to choose which side they want to view
-
 import React from 'react'
 import './choose.css'
 import { Link } from 'react-router-dom';
@@ -8,8 +6,8 @@ import '../../images/Marvel/Marvel-Logo.jpg';
 import '../../images/DC/DC-Logo.gif';
 import '../../images/DC/DC-Logo.jpg';
 
+// Home page which allows user to choose which side they want to view
 const choose = () => {
-
 
   return (
     <div className = "choose-container">
