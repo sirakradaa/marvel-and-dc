@@ -6,7 +6,7 @@
 }
 
 .dc-left-slide{
-    width: 46.65%;
+    width: 49%;
     position: absolute;
     top: 1%;
     left: 1%;
@@ -15,16 +15,18 @@
 
 .dc-image-container-hero{
     width: 50%;
+    height: 100%;
     display: flex;
 }
 
 .dc-img-hero{
     border-radius: 2% 0 0 2%;
+    height: auto;
 }
 
 .dc-right-slide{
     flex: 1;
-    width: 48%;
+    width: 49%;
     position: absolute;
     top: 1%;
     right: 1%;
@@ -38,12 +40,14 @@
 
 .dc-image-container-villain{
     width: 50%;
+    height: 100%;
     display: flex;
     float: right;
 }
 
 .dc-img-villain{
     border-radius: 0 2% 2% 0;
+    height: auto;
 }
 
 .dc-desc-hero{
@@ -80,6 +84,42 @@
     z-index: 1;
 }
 
-.carousel{
-    border-radius: 2%;
-}
+@media only screen and (max-width:860px){
+    .dc-container{
+        flex-direction: column;
+        display: grid;
+    }  
+
+    .carousel-container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .dc-left-slide{
+        flex: 1;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .dc-right-slide{
+        flex: 1;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .thumbs-wrapper.axis-vertical{
+        display: none;
+    }
+    
+    .legend{
+        width: 100%;
+    }
+
+    .slider.animated{
+        display: flex;
+    }
+  }
