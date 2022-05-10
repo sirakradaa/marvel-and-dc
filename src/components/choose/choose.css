@@ -18,7 +18,7 @@
 .marvel-logo{
     width: 90%;
     padding-top: 49%;
-    background-image: url('../../images/Marvel/Marvel-Logo.jpg');
+    background-image: url('../../images/Logos/Marvel-Logo.jpg');
     background-size: cover;
     cursor: pointer;
     border-radius: 10px;
@@ -27,7 +27,7 @@
 }
 
 .marvel-logo:hover{
-    background-image: url('../../images/Marvel/Marvel-Logo.gif');
+    background-image: url('../../images/Logos/Marvel-Logo.gif');
 }
 
 .choose-right{
@@ -42,7 +42,7 @@
 .dc-logo{
     width: 90%;
     padding-top: 49%;
-    background-image: url('../../images/DC/DC-Logo.jpg');
+    background-image: url('../../images/Logos/DC-Logo.jpg');
     background-size: cover;
     cursor: pointer;
     border-radius: 10px;
@@ -50,7 +50,7 @@
 }
 
 .dc-logo:hover{
-    background-image: url('../../images/DC/DC-Logo.gif');
+    background-image: url('../../images/Logos/DC-Logo.gif');
 }
 
 .button-vote{

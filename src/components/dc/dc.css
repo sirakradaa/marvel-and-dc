@@ -1,43 +1,85 @@
 .dc-container{
     height: 100vh;
-    width: 100vw;
     display: flex;
     align-items: center;
-    background-color: rgb(3, 3, 41);
-}
-
-.dc-box{    
-    flex: 1;
-    position: relative;
-    width: 50%;
-    height: 100%;
-    background-color: #5e5e5e;
+    background-color: rgb(20, 60, 116);
 }
 
 .dc-left-slide{
-    height: 30%;
-    width: 30%;
+    width: 46.65%;
     position: absolute;
-    top: 0%;
+    top: 1%;
+    left: 1%;
+    text-align: center;
+}
+
+.dc-image-container-hero{
+    width: 50%;
+    display: flex;
+}
+
+.dc-img-hero{
+    border-radius: 2% 0 0 2%;
 }
 
 .dc-right-slide{
-    height: 30%;
-    width: 30%;
+    flex: 1;
+    width: 48%;
     position: absolute;
-    top: 0%;
-    right: 0%;
-    margin-left: auto;
-    margin-right: 0;
+    top: 1%;
+    right: 1%;
+    text-align: center;
 }
 
-.carousel .slider-wrapper{
-    width: 100%;
-    height: 100%;
+.dc-right{
+    flex: 1;
+    position: relative;
 }
 
-.dc-desc{
-    background-color: black;
-    width: 100%;
+.dc-image-container-villain{
+    width: 50%;
+    display: flex;
+    float: right;
+}
+
+.dc-img-villain{
+    border-radius: 0 2% 2% 0;
+}
+
+.dc-desc-hero{
+    background-image: linear-gradient(to right, rgb(20, 60, 116), 
+    rgba(214, 34, 43, 0.8) 50%);
+    width: 50%;
     height: 100%;
+    position: absolute;
+    right: 0;
+    color: white;
+    overflow-wrap: break-word;
+    text-align-last: left;
+    border-radius: 0 2% 2% 0;
+    padding-right: 5%;
+    padding-left: 3%;
+}
+
+.dc-desc-villain{
+    background-image: linear-gradient(to left, rgb(20, 60, 116), 
+    rgba(214, 34, 43, 0.8) 50%);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    color: white;
+    overflow-wrap: break-word;
+    text-align-last: left;
+    border-radius: 2% 0 0 2%;
+    padding-right: 5%;
+    padding-left: 3%;
+}
+
+.legend{
+    z-index: 1;
+}
+
+.carousel{
+    border-radius: 2%;
 }
