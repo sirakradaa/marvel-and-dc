@@ -1,16 +1,16 @@
 .dc-container{
     height: 100vh;
-    display: flex;
+    width: 100%;
     align-items: center;
     background-color: rgb(20, 60, 116);
 }
 
-.dc-left-slide{
-    width: 49%;
-    position: absolute;
+.dc-slide{
+    width: 50%;
     top: 1%;
     left: 1%;
     text-align: center;
+    float: left;
 }
 
 .dc-image-container-hero{
@@ -24,18 +24,12 @@
     max-height: 700px;
 }
 
-.dc-right-slide{
-    flex: 1;
+.dc-slide-right{
     width: 49%;
     position: absolute;
     top: 1%;
     right: 1%;
     text-align: center;
-}
-
-.dc-right{
-    flex: 1;
-    position: relative;
 }
 
 .dc-image-container-villain{
@@ -59,6 +53,7 @@
     right: 0;
     color: white;
     overflow-wrap: break-word;
+    font-size: 1.5vw;
     text-align-last: left;
     border-radius: 0 2% 2% 0;
     padding-right: 5%;
@@ -74,6 +69,7 @@
     left: 0;
     color: white;
     overflow-wrap: break-word;
+    font-size: 1.5vw;
     text-align-last: left;
     border-radius: 2% 0 0 2%;
     padding-right: 5%;
@@ -90,42 +86,14 @@
     width: auto;
 }
 
+
 @media only screen and (max-width:860px){
-    .dc-container{
-        flex-direction: column;
-        display: grid;
-    }  
-
-    .carousel-container{
+    .dc-slide{
         width: 100%;
-        flex-direction: column;
-    }
-
-    .dc-left-slide{
-        flex: 1;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
     }
     
-    .dc-right-slide{
-        flex: 1;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-
     .thumbs-wrapper.axis-vertical{
         display: none;
     }
-    
-    .legend{
-        width: 100%;
-    }
 
-    .slider.animated{
-        display: flex;
-    }
   }

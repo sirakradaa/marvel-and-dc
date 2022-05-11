@@ -14,7 +14,8 @@ const dc = () =>  {
     <AnimationsPage>
       <div className = "dc-container">
         {/*Hero carousel*/}
-          <Carousel className="dc-left-slide">
+        <div className="dc-box">
+          <Carousel className="dc-slide">
             <div className="dc-image-container-hero">
                 <img className="dc-img-hero" src={ dcChars.Batman } alt="" />
                 <p className="legend">Batman</p>
@@ -37,7 +38,7 @@ const dc = () =>  {
             </div>
         </Carousel>
         {/*Villain carousel*/}
-        <Carousel className="dc-right-slide">
+        <Carousel className="dc-slide">
           <div className="dc-image-container-villain">
               <p className="legend">Joker</p>
               <div className="dc-desc-villain">HERE</div>
@@ -59,6 +60,7 @@ const dc = () =>  {
               <img className="dc-img-villain" src={ dcChars.Bane } alt="" />
           </div>
         </Carousel>
+        </div>
       </div>
     </AnimationsPage>
   )
