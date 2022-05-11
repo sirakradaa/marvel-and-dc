@@ -21,7 +21,7 @@
 
 .dc-img-hero{
     border-radius: 2% 0 0 2%;
-    height: auto;
+    max-height: 700px;
 }
 
 .dc-right-slide{
@@ -47,7 +47,7 @@
 
 .dc-img-villain{
     border-radius: 0 2% 2% 0;
-    height: auto;
+    max-height: 700px;
 }
 
 .dc-desc-hero{
@@ -82,6 +82,12 @@
 
 .legend{
     z-index: 1;
+}
+
+.thumb{
+    max-height: 110px;
+    height: 70%;
+    width: auto;
 }
 
 @media only screen and (max-width:860px){
