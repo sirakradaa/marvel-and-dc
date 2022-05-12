@@ -12,7 +12,7 @@ export const DCVillains = () => {
                     allies: '',
                     enemies: '',
                 },
-                placement: '',
+                placement: 0,
             },
 
             {
@@ -23,7 +23,7 @@ export const DCVillains = () => {
                     allies: '',
                     enemies: '',
                 },
-                placement: '',
+                placement: 0,
             },
 
             {
@@ -34,7 +34,7 @@ export const DCVillains = () => {
                     allies: '',
                     enemies: '',
                 },
-                placement: '',
+                placement: 0,
             },
 
             {
@@ -45,7 +45,7 @@ export const DCVillains = () => {
                     allies: '',
                     enemies: '',
                 },
-                placement: '',
+                placement: 0,
             }
         ]
     )
