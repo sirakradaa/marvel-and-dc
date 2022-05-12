@@ -1,22 +1,41 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 .vote-container{
     height: 100vh;
-    width: 100vw;
-    display: block;
-    align-items: center;
     background-color: rgb(26, 21, 21);
 }
 
 .ranking{
     top: 0px;
+    width: 100%;
     color: aliceblue;
     margin-left: 10%;
     padding-top: 1%;
 }
 
-.select-container{
-    width: 400px;
+.vote-label{
+    font-size: 1vw;
+    
 }
 
-.select{
-    width: 400px;
+#myForm select{
+    width: 10%;
+    display: grid;
+    font-size: 1vw;
+    margin-bottom: 4px;
+}
+
+
+@media screen and (min-width: 860px) {
+    #myForm select{
+        font-size: 10%vw;
+        
+    }
 }

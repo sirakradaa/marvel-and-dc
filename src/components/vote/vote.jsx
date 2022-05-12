@@ -60,30 +60,34 @@ const Vote = () =>  {
     return false;
   };
 
+  // update values of chosenOptions
   const handleChange = (e) => {
     setChosenOptions({...chosenOptions, [e.target.name]: e.target.value});
   };
+
 
   return (
     <AnimationsPage>
       <div className="vote-container">
         <div className="ranking">
           <form action="/action_page.php">
-            <label htmlFor="characters">Pick your top 8 </label>
-            {selectNames.map((name, index) => {
-                  return (
-                    <div className="select-container">
-                      <select name={name} key={index} onChange={handleChange} 
-                      value={chosenOptions[name]} required={index === 0}>
-                        <option value=''/>
-                        {options.filter(({value}) => !isChosenByOther(value, name))
-                            .map(({label, value}) =>
-                                <option value={value} key={value}>{label}</option>)
-                        }
-                      </select>
-                    </div>
-                  )
-              })}
+            <label className="vote-label" htmlFor="characters">Pick your top 8 </label>
+            <div id="myForm">
+              {/*Map every single select box with all the available options*/}
+              {selectNames.map((name, index) => {
+                    return (
+                        <select name={name} key={index} onChange={handleChange} 
+                        value={chosenOptions[name]} required={index === 0}>
+                          {/*Start with empty option*/}
+                          <option value=''></option>
+                          {options.filter(({value}) => !isChosenByOther(value, name))
+                              .map(({label, value}) =>
+                                  <option className={name} value={value} key={value}>{label}</option>)
+                          }
+                        </select>
+                    )
+                })}
+            </div>
             <input type="submit"/>
           </form>
         </div>
