@@ -4,17 +4,17 @@ import AnimationsPage from './../AnimationsPage';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { dcChars } from './../../images/dc-images';
+import { DCHeroes } from './../characters/dc/dc-heroes';
 
 // DC side which displays heros on the right and villains on the left
 // with a description of the character, affiliations, opponents and rank
 const dc = () =>  {
 
-
   return (
     <AnimationsPage>
       <div className = "dc-container">
-        {/*Hero carousel*/}
         <div className="dc-box">
+          {/*Hero carousel contains image, legend(name), and description*/}
           <Carousel className="dc-slide">
             <div className="dc-image-container-hero">
                 <img className="dc-img" src={ dcChars.Batman } alt="" />
@@ -37,7 +37,7 @@ const dc = () =>  {
                 <div className="dc-desc-hero">HERE</div>
             </div>
         </Carousel>
-        {/*Villain carousel*/}
+        {/*Villain carousel contains image, legend(name), and description*/}
         <Carousel className="dc-slide">
           <div className="dc-image-container-villain">
               <p className="legend">Joker</p>

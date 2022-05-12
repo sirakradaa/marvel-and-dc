@@ -1,0 +1,15 @@
+.vote-container{
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    align-items: center;
+    background-color: rgb(26, 21, 21);
+}
+
+.ranking{
+    top: 0px;
+    color: aliceblue;
+    margin-left: 10%;
+    padding-top: 1%;
+}
+
