@@ -1,8 +1,8 @@
-import { placementsReducer } from './placements';
 import { recalculateReducer } from './recalculate';
+import { voteReducer, votesReducer } from './votes';
 import { combineReducers } from 'redux';
 
 export const allReducers = combineReducers({
-    placements: placementsReducer,
-    recalculate: recalculateReducer
+    recalculate: recalculateReducer,
+    votes: votesReducer
 })

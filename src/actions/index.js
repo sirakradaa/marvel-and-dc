@@ -1,10 +1,11 @@
-export const increment = () => {
+export const recalculate = ([[placements], votes]) => {
     return{
-        type: 'INCREMENT'
+        type: 'RECALCULATE',
+        payload: [[placements], votes],
     }
 }
 
-export const decrement = () => {
+export const votes = () => {
     return{
         type: 'INCREMENT'
     }
