@@ -1,5 +1,5 @@
 import { recalculateReducer } from './recalculate';
-import { voteReducer, votesReducer } from './votes';
+import { votesReducer } from './votes';
 import { combineReducers } from 'redux';
 
 export const allReducers = combineReducers({
