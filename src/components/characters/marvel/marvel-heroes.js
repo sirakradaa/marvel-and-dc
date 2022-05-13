@@ -25,7 +25,6 @@ export const MarvelHeroes = () => {
                 New Avengers, 
                 S.H.I.E.L.D., 
                 Spider-Army/Web-Warriors.`,
-                placement: 0,
             },
             
             {
@@ -50,7 +49,6 @@ export const MarvelHeroes = () => {
                 S.H.I.E.L.D.,
                 Stark Industries,
                 Stark Resilient.`,
-                placement: 0,
             },
             
             {
@@ -70,7 +68,6 @@ export const MarvelHeroes = () => {
                 Midnight Sons,
                 New Avengers,
                 The Order.`,
-                placement: 0,
             },
             
             {
@@ -93,7 +90,6 @@ export const MarvelHeroes = () => {
                 Savage Avengers,
                 Weapon X,
                 X-Force.`,
-                placement: 0,
             }
         ]
     )

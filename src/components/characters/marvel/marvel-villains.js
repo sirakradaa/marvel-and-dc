@@ -28,7 +28,6 @@ export const MarvelVillains = () => {
                 Cabal,
                 Goblin Nation,
                 Power Elite.`,
-                placement: 0,
             },
 
             {
@@ -44,7 +43,6 @@ export const MarvelVillains = () => {
                 sufficient power.`,
                 affiliations: `Infinity Watch,
                 Black Order.`,
-                placement: 0,
             },
 
             {
@@ -65,7 +63,6 @@ export const MarvelVillains = () => {
                 Exiles,
                 U.L.T.I.M.A.T.U.M.,
                 Skeleton Crew.`,
-                placement: 0,
             },
 
             {
@@ -88,7 +85,6 @@ export const MarvelVillains = () => {
                 Acolytes,
                 Astonishing Avengers,
                 Quiet Council of Krakoa.`,
-                placement: 0,
             }
         ]
     )

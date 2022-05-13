@@ -25,7 +25,6 @@ export const DCHeroes = () => {
                     Justice League of America,
                     Gotham Knights,
                     Justice League: Team Entropy.`,
-                placement: 0,
             },
             
             {
@@ -40,7 +39,6 @@ export const DCHeroes = () => {
                 Formerly Justice League,
                 Justice League: Team Mystery,
                 Sinestro Corps.`,
-                placement: 0,
             },
             
             {
@@ -63,7 +61,6 @@ export const DCHeroes = () => {
                 Justice League: Team Wonder,
                 Lords of Chaos,
                 All-Star Squadron.`,
-                placement: 0,
             },
             
             {
@@ -77,7 +74,6 @@ export const DCHeroes = () => {
                 Formerly Justice Incarnate ·
                 Justice League ·
                 Justice League: Team Wisdom.`,
-                placement: 0,
             }
         ]
     )

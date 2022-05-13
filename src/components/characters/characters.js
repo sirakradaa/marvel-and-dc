@@ -4,48 +4,7 @@ export const Characters = () => {
 
     return(
         [
-            {
-                name: 'Batman',
-                placement: 0,
-                total: 0,
-            },
             
-            {
-                name: 'Superman',
-                placement: 0,
-                total: 0,
-            },
-            
-            {
-                name: 'Wonder Woman',
-                placement: 0,
-                total: 0,
-            },
-            
-            {
-                name: 'Flash',
-                placement: 0,
-                total: 0,
-            },
-
-            {
-                name: 'Joker',
-                placement: 0,
-                total: 0,
-            },
-
-            {
-                name: 'Lex Luthor',
-                placement: 0,
-                total: 0,
-            },
-
-            {
-                name: 'Darkseid',
-                placement: 0,
-                total: 0,
-            },
-
             {
                 name: 'Bane',
                 placement: 0,
@@ -53,11 +12,35 @@ export const Characters = () => {
             },
 
             {
-                name: 'Spider-Man',
+                name: 'Batman',
                 placement: 0,
                 total: 0,
             },
             
+            {
+                name: 'Darkseid',
+                placement: 0,
+                total: 0,
+            },
+                        
+            {
+                name: 'Doctor Strange',
+                placement: 0,
+                total: 0,
+            },
+       
+            {
+                name: 'Flash',
+                placement: 0,
+                total: 0,
+            },
+
+            {
+                name: 'Green Goblin',
+                placement: 0,
+                total: 0,
+            },
+           
             {
                 name: 'Iron Man',
                 placement: 0,
@@ -65,24 +48,19 @@ export const Characters = () => {
             },
             
             {
-                name: 'Doctor Strange',
+                name: 'Joker',
                 placement: 0,
                 total: 0,
             },
             
             {
-                name: 'Wolverine',
+                name: 'Lex Luthor',
                 placement: 0,
                 total: 0,
             },
+            
             {
-                name: 'Green Goblin',
-                placement: 0,
-                total: 0,
-            },
-
-            {
-                name: 'Thanos',
+                name: 'Magneto',
                 placement: 0,
                 total: 0,
             },
@@ -92,12 +70,38 @@ export const Characters = () => {
                 placement: 0,
                 total: 0,
             },
-
+            
             {
-                name: 'Magneto',
+                name: 'Spider-Man',
                 placement: 0,
                 total: 0,
-            }
+            },
+
+            {
+                name: 'Superman',
+                placement: 0,
+                total: 0,
+            },
+            
+            {
+                name: 'Thanos',
+                placement: 0,
+                total: 0,
+            },
+
+            {
+                name: 'Wolverine',
+                placement: 0,
+                total: 0,
+            },
+            
+            {
+                name: 'Wonder Woman',
+                placement: 0,
+                total: 0,
+            },
+
+
         ]
     )
 }

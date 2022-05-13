@@ -14,7 +14,6 @@ export const DCVillains = () => {
                 affiliations: `League of Villainy,
                 Legion of Doom ·
                 Formerly Red Hood Gang.`,
-                placement: 0,
             },
 
             {
@@ -36,7 +35,6 @@ export const DCVillains = () => {
                 Apokolips,
                 Justice League: Team Entropy,
                 Superman Family.`,
-                placement: 0,
             },
 
             {
@@ -50,7 +48,6 @@ export const DCVillains = () => {
                 Great Darkness,
                 Dark Army ·
                 Formerly Apokolips.`,
-                placement: 0,
             },
 
             {
@@ -64,7 +61,6 @@ export const DCVillains = () => {
                 Task Force Z ·
                 Formerly League of Assassins,
                 Secret Society of Super-Villains.`,
-                placement: 0,
             }
         ]
     )
