@@ -20,7 +20,10 @@ const marvel = () =>  {
               <div className="mar-image-container-hero"  key="marvel-hero-slide-container">
                   <img className="mar-img" src={ hero.img } alt="" />
                   <p className="legend">{ hero.name }</p>
-                  <div className="mar-desc-hero">HERE</div>
+                  <div className="mar-desc-hero">
+                    <strong>Description:</strong> { hero.description } <br /> <br />
+                    <strong>Affiliations:</strong> { hero.affiliations }
+                  </div>
               </div>
             ))}
         </Carousel>
@@ -30,7 +33,10 @@ const marvel = () =>  {
                 <div className="mar-image-container-hero"  key="marvel-villain-slide-container">
                     <img className="mar-img" src={ villain.img } alt="" />
                     <p className="legend">{ villain.name }</p>
-                    <div className="mar-desc-hero">HERE</div>
+                    <div className="mar-desc-hero">
+                      <strong>Description:</strong> { villain.description } <br /> <br />
+                      <strong>Affiliations:</strong> { villain.affiliations }
+                    </div>
                 </div>
               ))}
         </Carousel>

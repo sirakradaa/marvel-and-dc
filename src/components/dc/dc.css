@@ -46,8 +46,8 @@ body{
     right: 0;
     color: white;
     overflow-wrap: break-word;
-    font-size: 1.5vw;
-    text-align-last: left;
+    font-size: 1vw;
+    text-align: left;
     border-radius: 0 2% 2% 0;
     padding-right: 5%;
     padding-left: 3%;
@@ -62,8 +62,8 @@ body{
     left: 0;
     color: white;
     overflow-wrap: break-word;
-    font-size: 1.5vw;
-    text-align-last: left;
+    font-size: 1vw;
+    text-align: left;
     border-radius: 2% 0 0 2%;
     padding-right: 5%;
     padding-left: 3%;
@@ -84,6 +84,14 @@ body{
 
     .dc-slide{
         width: 100%;
+    }
+
+    .dc-desc-hero{
+        font-size: 1.5vw;
+    }
+
+    .dc-desc-villain{
+        font-size: 1.5vw;
     }
     
     .thumbs-wrapper.axis-vertical{

@@ -20,7 +20,10 @@ const dc = () =>  {
               <div className="dc-image-container-hero" key="dc-hero-slide-container">
                   <img className="dc-img" src={ hero.img } alt="" />
                   <p className="legend">{ hero.name }</p>
-                  <div className="dc-desc-hero">HERE</div>
+                  <div className="dc-desc-hero">
+                    <strong>Description:</strong> { hero.description } <br /> <br />
+                    <strong>Affiliations:</strong> { hero.affiliations }
+                  </div>
               </div>
             ))}
         </Carousel>
@@ -30,7 +33,9 @@ const dc = () =>  {
                 <div className="dc-image-container-hero" key="dc-villain-slide-container">
                     <img className="dc-img" src={ villain.img } alt="" />
                     <p className="legend">{ villain.name }</p>
-                    <div className="dc-desc-hero">HERE</div>
+                    <div className="dc-desc-hero">
+                    <strong>Description:</strong> { villain.description } <br /> <br />
+                    <strong>Affiliations:</strong> { villain.affiliations }</div>
                 </div>
               ))}
         </Carousel>
