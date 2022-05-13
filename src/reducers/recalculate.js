@@ -10,6 +10,12 @@ const updatePlacements = (state, action) => {
                 state[j].total = state[j].total + i + 1;
                 // and then divide it by the number of votes to get the average placement
                 state[j].placement = state[j].total / action.payload.votes;
+                if(state[j].placement % 1 === 0){
+                    state[j].placement = state[j].placement.toFixed(0)
+                }
+                else{
+                    state[j].placement = state[j].placement.toFixed(1);
+                }
             }
         });
     }

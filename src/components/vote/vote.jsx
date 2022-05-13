@@ -202,13 +202,13 @@ const Vote = () =>  {
             </button>
           </form>
           <div className="placements">
-            Name Average Placement
+            Name &amp; Average Placement
             {/* map through the placements state and show the character name
             and their average placement */}
             {placements.map((char, i) => {
                     return (<div className="averagePlacements" key={i}>
                             <pre className="placementName">{char.name}</pre>
-                            <pre className="placementNumber">{char.placement.toFixed(1)}</pre>
+                            <pre className="placementNumber">{char.placement}</pre>
                             </div>)
                           }
                     )
