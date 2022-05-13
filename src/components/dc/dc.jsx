@@ -17,7 +17,7 @@ const dc = () =>  {
           {/*Hero carousel contains image, legend(name), and description*/}
           <Carousel className="dc-slide">
             {DCHeroes().map((hero) => (
-              <div className="dc-image-container-hero">
+              <div className="dc-image-container-hero" key="dc-hero-slide-container">
                   <img className="dc-img" src={ hero.img } alt="" />
                   <p className="legend">{ hero.name }</p>
                   <div className="dc-desc-hero">HERE</div>
@@ -27,7 +27,7 @@ const dc = () =>  {
         {/*Villain carousel contains image, legend(name), and description*/}
         <Carousel className="dc-slide">
           {DCVillains().map((villain) => (
-                <div className="dc-image-container-hero">
+                <div className="dc-image-container-hero" key="dc-villain-slide-container">
                     <img className="dc-img" src={ villain.img } alt="" />
                     <p className="legend">{ villain.name }</p>
                     <div className="dc-desc-hero">HERE</div>

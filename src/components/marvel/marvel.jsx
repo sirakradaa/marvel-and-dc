@@ -17,7 +17,7 @@ const marvel = () =>  {
           {/*Hero carousel contains image, legend(name), and description*/}
           <Carousel className="mar-slide">
             {MarvelHeroes().map((hero) => (
-              <div className="mar-image-container-hero">
+              <div className="mar-image-container-hero"  key="marvel-hero-slide-container">
                   <img className="mar-img" src={ hero.img } alt="" />
                   <p className="legend">{ hero.name }</p>
                   <div className="mar-desc-hero">HERE</div>
@@ -27,7 +27,7 @@ const marvel = () =>  {
         {/*Villain carousel contains image, legend(name), and description*/}
         <Carousel className="mar-slide">
           {MarvelVillains().map((villain) => (
-                <div className="mar-image-container-hero">
+                <div className="mar-image-container-hero"  key="marvel-villain-slide-container">
                     <img className="mar-img" src={ villain.img } alt="" />
                     <p className="legend">{ villain.name }</p>
                     <div className="mar-desc-hero">HERE</div>

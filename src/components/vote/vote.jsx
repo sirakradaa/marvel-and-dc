@@ -7,47 +7,82 @@ import { votes, recalculate } from './../../actions/index';
 
 
 const Vote = () =>  {
+  // placements state and voteCounter state
   const placements = useSelector(state => state.recalculate);
   const voteCounter = useSelector(state => state.votes);
+  // dispatch to dispatch the actions
   const dispatch = useDispatch();
 
   // number of select boxes
   const selectNames = ["select1", "select2","select3", "select4","select5", 
-  "select6","select7", "select8"];
+  "select6","select7", "select8","select9", "select10","select11", "select12","select13", 
+  "select14","select15", "select16"];
 
   // options of characters
   const [options] = useState([
     {
-        label: 'Bane',
-        value: 'bane'
+      label: 'Bane',
+      value: 'bane'
     },
     {
-        label: 'Batman',
-        value: 'batman'
+      label: 'Batman',
+      value: 'batman'
     },
     {
-        label: 'Darkseid',
-        value: 'darkseid'
+      label: 'Darkseid',
+      value: 'darkseid'
     },    
     {
-        label: 'Flash',
-        value: 'flash'
+      label: 'Doctor Strange',
+      value: 'doctorstrange',
     },
     {
-        label: 'Joker',
-        value: 'joker'
+      label: 'Flash',
+      value: 'flash'
     },
     {
-        label: 'Lex Luthor',
-        value: 'lex'
-    },    
-    {
-        label: 'Superman',
-        value: 'superman'
+      label: 'Green Goblin',
+      value: 'greengoblin',
     },
     {
-        label: 'Wonder Woman',
-        value: 'wonder'
+      label: 'Iron Man',
+      value: 'ironman',
+    },
+    {
+      label: 'Joker',
+      value: 'joker'
+    },
+    {
+      label: 'Lex Luthor',
+      value: 'lex'
+    },
+    {
+      label: 'Magneto',
+      value: 'magneto',
+    },
+    {
+      label: 'Red Skull',
+      value: 'redskull',
+    },
+    {
+      label: 'Spider-Man',
+      value: 'spiderman',
+    },
+    {
+      label: 'Superman',
+      value: 'superman'
+    },
+    {
+      label: 'Thanos',
+      value: 'thanos',
+    },
+    {
+      label: 'Wolverine',
+      value: 'wolverine',
+    },
+    {
+      label: 'Wonder Woman',
+      value: 'wonder'
     }
   ]);
 
@@ -55,6 +90,7 @@ const Vote = () =>  {
   const [chosenOptions, setChosenOptions] = useState({});
 
   // check if another box has the option selected
+  // if it does then remove the option
   const isChosenByOther = (optionValue, selectName) => {
     for (let key in chosenOptions) {
         if (key !== selectName) {
@@ -82,12 +118,12 @@ const Vote = () =>  {
     e.preventDefault();
 
     // get all select tags and put them in an array
-    var input = document.getElementsByTagName("select");
-    var inputList = Array.prototype.slice.call(input);
+    let input = document.getElementsByTagName("select");
+    let inputList = Array.prototype.slice.call(input);
 
     //if one value is length 0 then we end the loop and return
     let isEmpty = false;
-    
+
     //iterate through each select to check if it's empty
     for(let i = 0; i < selectNames.length; i++){
       if(inputList[i].value.length === 0){
@@ -101,23 +137,26 @@ const Vote = () =>  {
       return
     }
 
+    // Increase the votes by 1
     incrementVotes();
+
+    // Send the order of the list to update placements
+    updatePlacements(inputList);
   };
 
+
   // get each element from select boxes going from top to bottom
-  const updatePlacements = () => {
+  const updatePlacements = (inputList) => {
     // store it in an array
     let orderPlacements = [];
 
-    // go through each select element by name and push it to placements
-    for(let i = 1; i <= selectNames.length; i++){
-      let selectStr = 'select'.concat(i.toString());
-      let currSelect = document.getElementsByName(selectStr);
-      orderPlacements.push()
+    // add the text from each select box in order of top to bottom
+    for(let i = 0; i < selectNames.length; i++){
+      orderPlacements.push(inputList[i].options[inputList[i].selectedIndex].text)
     }
 
-    // send array and votes to recalculate to return new values
-    dispatch(recalculate([[orderPlacements], {votes}]));
+    // send array and votes to recalculate to return updated values
+    dispatch(recalculate(orderPlacements, voteCounter + 1));
   };
 
 
@@ -126,7 +165,7 @@ const Vote = () =>  {
       <div className="vote-container">
         <div className="vote-choose">
           <form action="/action_page.php">
-            <label className="vote-label">Pick your top 8 </label>
+            <label className="vote-label">Most to least favourite</label>
             <div id="myForm">
               {/*Map every single select box with all the available options*/}
               {selectNames.map((name, index) => {
@@ -145,13 +184,21 @@ const Vote = () =>  {
                     )
                 })}
             </div>
+            {/* Button that gets new average placements */}
             <button className="button"
             onClick={(e) => validateSelect(e)} type="submit">
               Submit
             </button>
           </form>
           <div className="placements">
-            {voteCounter}
+            Name and Average Placement
+            {/* map through the placements state and show the character name
+            and their average placement */}
+            {placements.map((char) => {
+                    return ( <h3 key={char.name}>{char.name} {char.placement.toFixed(1)}</h3>)
+                          }
+                    )
+              }
           </div>
         </div>
       </div>
