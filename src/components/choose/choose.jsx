@@ -17,6 +17,7 @@ const choose = () => {
         <Link className="dc-logo" to='/dc'></Link>
       </div>
         <Link className="button-vote" to='/vote' >
+          Pick your favourites!
         </Link>
     </div>
   )

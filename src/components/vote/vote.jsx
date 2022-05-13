@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 import VoteAnimations from './VoteAnimations';
 import './vote.css'
 import { useSelector, useDispatch } from 'react-redux';
@@ -163,8 +164,18 @@ const Vote = () =>  {
   return (
     <VoteAnimations>
       <div className="vote-container">
+        {/* Buttons to go to marvel, home, and DC page */}
+        <Link className="vote-marvel" to='/marvel' >
+          Marvel
+        </Link>
+        <Link className="vote-home" to='/' >
+          Home
+        </Link>
+        <Link className="vote-dc" to='/dc' >
+          DC
+        </Link>
         <div className="vote-choose">
-          <form action="/action_page.php">
+          <form className="form" action="/action_page.php">
             <label className="vote-label">Most to least favourite</label>
             <div id="myForm">
               {/*Map every single select box with all the available options*/}
@@ -191,7 +202,7 @@ const Vote = () =>  {
             </button>
           </form>
           <div className="placements">
-            Name and Average Placement
+            Name Average Placement
             {/* map through the placements state and show the character name
             and their average placement */}
             {placements.map((char, i) => {
@@ -201,7 +212,7 @@ const Vote = () =>  {
                             </div>)
                           }
                     )
-              }
+            }
           </div>
         </div>
       </div>

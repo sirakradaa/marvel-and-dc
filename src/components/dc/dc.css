@@ -10,6 +10,10 @@ body{
     background-color: rgb(20, 60, 116);
 }
 
+.dc-box{
+    padding-top: 1.7%;
+}
+
 .dc-slide{
     width: 50%;
     height: 100%;
@@ -78,6 +82,44 @@ body{
     max-height: 110px;
     height: 70%;
     width: auto;
+}
+
+.dc-vote, .dc-home, .dc-marvel{
+    width: 5%;
+    height: 5%;
+    top: 0;
+    position: absolute;
+    color: rgb(0, 22, 117);
+    text-align: center;
+    font-size: 1vw;
+}
+
+.dc-vote:hover{
+    color: black;
+    font-size: 1.3vw;
+}
+
+.dc-home:hover{
+    color: black;
+    font-size: 1.3vw;
+}
+
+.dc-marvel:hover{
+    color: black;
+    font-size: 1.3vw;
+}
+
+.dc-vote{
+    z-index: 0;
+    left: 0;
+}
+
+.dc-home{
+    left: 50%;
+}
+
+.dc-marvel{
+    right: 0;
 }
 
 @media only screen and (max-width:860px){

@@ -1,5 +1,6 @@
 import './dc.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DCPage from './DCAnimations';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -13,6 +14,16 @@ const dc = () =>  {
   return (
     <DCPage>
       <div className = "dc-container">
+        {/* Buttons to go to vote, home, and DC page */}
+        <Link className="marvel-vote" to='/Marvel' >
+          Marvel
+        </Link>
+        <Link className="marvel-home" to='/' >
+          Home
+        </Link>
+        <Link className="marvel-dc" to='/Vote' >
+          Vote
+        </Link>
         <div className="dc-box">
           {/*Hero carousel contains image, legend(name), and description*/}
           <Carousel className="dc-slide">

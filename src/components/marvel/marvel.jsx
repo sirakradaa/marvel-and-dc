@@ -1,5 +1,6 @@
 import './marvel.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MarvelAnimations from './MarvelAnimations';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -13,6 +14,16 @@ const marvel = () =>  {
   return (
     <MarvelAnimations>
       <div className = "mar-container">
+        {/* Buttons to go to vote, home, and DC page */}
+        <Link className="marvel-vote" to='/vote' >
+          Vote
+        </Link>
+        <Link className="marvel-home" to='/' >
+          Home
+        </Link>
+        <Link className="marvel-dc" to='/dc' >
+          DC
+        </Link>
         <div className="mar-box">
           {/*Hero carousel contains image, legend(name), and description*/}
           <Carousel className="mar-slide">

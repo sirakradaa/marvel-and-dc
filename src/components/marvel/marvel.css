@@ -10,6 +10,10 @@ body{
     background-color: rgb(237, 29, 36);
 }
 
+.mar-box{
+    padding-top: 1.7%;
+}
+
 .mar-slide{
     width: 50%;
     height: 100%;
@@ -78,6 +82,44 @@ body{
     max-height: 110px;
     height: 70%;
     width: auto;
+}
+
+.marvel-vote, .marvel-home, .marvel-dc{
+    width: 5%;
+    height: 5%;
+    top: 0;
+    position: absolute;
+    color: rgb(0, 22, 117);
+    text-align: center;
+    font-size: 1vw;
+}
+
+.marvel-vote:hover{
+    color: black;
+    font-size: 1.3vw;
+}
+
+.marvel-home:hover{
+    color: black;
+    font-size: 1.3vw;
+}
+
+.marvel-dc:hover{
+    color: black;
+    font-size: 1.3vw;
+}
+
+.marvel-vote{
+    z-index: 0;
+    left: 0;
+}
+
+.marvel-home{
+    left: 50%;
+}
+
+.marvel-dc{
+    right: 0;
 }
 
 @media only screen and (max-width:860px){
