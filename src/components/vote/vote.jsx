@@ -195,7 +195,7 @@ const Vote = () =>  {
             {/* map through the placements state and show the character name
             and their average placement */}
             {placements.map((char) => {
-                    return ( <h3 key={char.name}>{char.name} {char.placement.toFixed(1)}</h3>)
+                    return (<h3 key={char.name}>{char.name} {char.placement.toFixed(1)}</h3>)
                           }
                     )
               }

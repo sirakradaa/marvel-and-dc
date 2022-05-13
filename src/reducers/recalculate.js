@@ -7,7 +7,7 @@ const updatePlacements = (state, action) => {
             // find the object that has the same name as the current placement
             if (entry.name === action.payload.placements[i]){
                 // then update the total (Which is all the placements together)
-                state[j].total = state[j].total + i;
+                state[j].total = state[j].total + i + 1;
                 // and then divide it by the number of votes to get the average placement
                 state[j].placement = state[j].total / action.payload.votes;
             }
