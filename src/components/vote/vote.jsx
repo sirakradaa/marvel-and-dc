@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import AnimationsPage from './../AnimationsPage';
+import VoteAnimations from './VoteAnimations';
 import './vote.css'
 import { useSelector, useDispatch } from 'react-redux';
 import { votes, recalculate } from './../../actions/index';
@@ -161,7 +161,7 @@ const Vote = () =>  {
 
 
   return (
-    <AnimationsPage>
+    <VoteAnimations>
       <div className="vote-container">
         <div className="vote-choose">
           <form action="/action_page.php">
@@ -202,7 +202,7 @@ const Vote = () =>  {
           </div>
         </div>
       </div>
-    </AnimationsPage>
+    </VoteAnimations>
   )
 }
 

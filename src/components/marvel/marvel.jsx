@@ -1,6 +1,6 @@
 import './marvel.css';
 import React from 'react';
-import AnimationsPage from './../AnimationsPage';
+import MarvelAnimations from './MarvelAnimations';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { MarvelHeroes } from './../characters/marvel/marvel-heroes';
@@ -11,7 +11,7 @@ import { MarvelVillains } from './../characters/marvel/marvel-villains';
 const marvel = () =>  {
 
   return (
-    <AnimationsPage>
+    <MarvelAnimations>
       <div className = "mar-container">
         <div className="mar-box">
           {/*Hero carousel contains image, legend(name), and description*/}
@@ -42,7 +42,7 @@ const marvel = () =>  {
         </Carousel>
         </div>
       </div>
-    </AnimationsPage>
+    </MarvelAnimations>
   )
 }
 

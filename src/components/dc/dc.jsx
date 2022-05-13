@@ -1,6 +1,6 @@
 import './dc.css';
 import React from 'react';
-import AnimationsPage from './../AnimationsPage';
+import DCPage from './DCAnimations';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { DCHeroes } from './../characters/dc/dc-heroes';
@@ -11,7 +11,7 @@ import { DCVillains } from './../characters/dc/dc-villains';
 const dc = () =>  {
 
   return (
-    <AnimationsPage>
+    <DCPage>
       <div className = "dc-container">
         <div className="dc-box">
           {/*Hero carousel contains image, legend(name), and description*/}
@@ -41,7 +41,7 @@ const dc = () =>  {
         </Carousel>
         </div>
       </div>
-    </AnimationsPage>
+    </DCPage>
   )
 }
 
