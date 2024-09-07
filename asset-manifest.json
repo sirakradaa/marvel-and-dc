@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/marvel-and-dc/static/css/main.fb1b8c9f.css",
+    "main.js": "/marvel-and-dc/static/js/main.202708aa.js",
+    "static/media/DC-Logo.gif": "/marvel-and-dc/static/media/DC-Logo.9f93659d9a4255c0e3bb.gif",
+    "static/media/joker.png": "/marvel-and-dc/static/media/joker.f3668b36bb724e7d71c9.png",
+    "static/media/wonderwoman.png": "/marvel-and-dc/static/media/wonderwoman.96e0909b735cb84153f2.png",
+    "static/media/spiderman.jpg": "/marvel-and-dc/static/media/spiderman.d302b9046dd4277b8f35.jpg",
+    "static/media/Marvel-Logo.gif": "/marvel-and-dc/static/media/Marvel-Logo.c2367f43280252775991.gif",
+    "static/media/magneto.jpg": "/marvel-and-dc/static/media/magneto.1ce8e76367e2d8a399ee.jpg",
+    "static/media/redskull.jpg": "/marvel-and-dc/static/media/redskull.1084731ea8fe0d6d8619.jpg",
+    "static/media/batman.jpg": "/marvel-and-dc/static/media/batman.97431753b350eec9d132.jpg",
+    "static/media/darkseid.jpg": "/marvel-and-dc/static/media/darkseid.6b40a931057422d7e3eb.jpg",
+    "static/media/flash.jpg": "/marvel-and-dc/static/media/flash.4eaa98f813d47b34c9ea.jpg",
+    "static/media/superman.jpg": "/marvel-and-dc/static/media/superman.9e99fe46042d4e907ee3.jpg",
+    "static/media/wolverine.jpg": "/marvel-and-dc/static/media/wolverine.c91ec2ccb9da9cf9889c.jpg",
+    "static/media/lexluthor.jpg": "/marvel-and-dc/static/media/lexluthor.75eea1fc8a5682d9d13a.jpg",
+    "static/media/thanos.jpg": "/marvel-and-dc/static/media/thanos.4550ebbee925e69693db.jpg",
+    "static/media/ironman.jpg": "/marvel-and-dc/static/media/ironman.6d13a786721a4d2f26e9.jpg",
+    "static/media/greengoblin.jpg": "/marvel-and-dc/static/media/greengoblin.5cbe903b03145bea3ea5.jpg",
+    "static/media/drstrange.jpg": "/marvel-and-dc/static/media/drstrange.12657ac990671ed0a0ab.jpg",
+    "static/media/bane.jpg": "/marvel-and-dc/static/media/bane.c14e6fabf63aa63cc11e.jpg",
+    "static/media/DC-Logo.jpg": "/marvel-and-dc/static/media/DC-Logo.7adfb5defbc11cb2e82a.jpg",
+    "static/media/Marvel-Logo.jpg": "/marvel-and-dc/static/media/Marvel-Logo.238215bf448ce8b46f30.jpg",
+    "index.html": "/marvel-and-dc/index.html",
+    "main.fb1b8c9f.css.map": "/marvel-and-dc/static/css/main.fb1b8c9f.css.map",
+    "main.202708aa.js.map": "/marvel-and-dc/static/js/main.202708aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb1b8c9f.css",
+    "static/js/main.202708aa.js"
+  ]
+}
