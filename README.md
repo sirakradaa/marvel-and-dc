@@ -32,7 +32,7 @@ To get a local copy up and running, follow these steps:
    ```
 2. Navigate to the project directory:
    ```
-   cd src
+   cd marvel-and-dc
    ```
 3. Install dependencies:
    ```
