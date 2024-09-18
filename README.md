@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a [brief description of your project]. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and enhanced to [main purpose or goal of your project].
+This project is a fan page of 4 marvel/dc heroes and 4 marvel/dc villains which allows the user to submit the their heroes/villains in order of most to least favourite. Along with some pictures, descriptions, and affiliation information about the character. It was bootstrapped with Create React App to demonstrate my abilities with Redux and React to a potential employer during the interview process.
 
 ## Features
 
