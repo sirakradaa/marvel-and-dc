@@ -48,10 +48,6 @@ To get a local copy up and running, follow these steps:
 
 In the project directory, you can run:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.
@@ -59,32 +55,6 @@ Builds the app for production to the `build` folder.
 ## Purpose
 
 A take-home project for a software engineering position focusing on React, Redux, and JavaScript.
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-For more information on Create React App, refer to the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
 
